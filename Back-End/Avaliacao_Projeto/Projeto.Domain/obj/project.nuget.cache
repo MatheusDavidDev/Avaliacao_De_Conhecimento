@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CRBHIT9QkX94TtSnEEL5t99FkLRFnL1+pAXH3ocj6Tje4WbHSid0RLCI40jeXSnJAgKw7TnK935Izk8ltK5RfA==",
+  "dgSpecHash": "UH7TnxAGEIOMnIxM92qyFbf/5FCo3Pw7okrT2F/m7TM2+oHOhCCciqUJgas5ckDLOgZXCQkEzLUBiNfeelcUDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Projeto.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Projeto.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mathe\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

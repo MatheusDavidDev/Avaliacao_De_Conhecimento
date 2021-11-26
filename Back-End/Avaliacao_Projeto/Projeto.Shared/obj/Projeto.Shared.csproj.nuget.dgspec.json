@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj": {}
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj",
         "projectName": "Projeto.Shared",
-        "projectPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\Projeto.Shared.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

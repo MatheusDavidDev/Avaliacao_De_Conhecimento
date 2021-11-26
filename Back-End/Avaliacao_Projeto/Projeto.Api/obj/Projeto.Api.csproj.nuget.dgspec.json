@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj": {}
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj",
         "projectName": "Projeto.Api",
-        "projectPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Projeto.Api.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",

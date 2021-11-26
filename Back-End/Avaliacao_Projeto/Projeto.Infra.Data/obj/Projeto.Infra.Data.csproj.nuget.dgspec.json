@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj": {}
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj": {
+    "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj",
         "projectName": "Projeto.Infra.Data",
-        "projectPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj",
+        "projectPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\Projeto.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\Desktop\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\Source\\Repos\\MatheusDavidDev\\Avaliacao_De_Conhecimento\\Back-End\\Avaliacao_Projeto\\Projeto.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
