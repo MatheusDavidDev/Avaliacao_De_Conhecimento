@@ -11,7 +11,8 @@ namespace Projeto.Domain.Entities
 {
     public class Funcionario : Base
     {
-        public Funcionario(string nome, Guid idEmpresa, Telefone telefones)
+
+        public Funcionario(string nome, DateTime dataCadastro, Guid idEmpresa)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -24,9 +25,8 @@ namespace Projeto.Domain.Entities
             if (IsValid)
             {
                 Nome = nome;
-                DataCadastro = DateTime.Now;
+                DataCadastro = dataCadastro;
                 IdEmpresa = idEmpresa;
-                Telefones = telefones;
 
             }
 
@@ -35,12 +35,12 @@ namespace Projeto.Domain.Entities
         public string Nome { get; private set; }
         public DateTime DataCadastro { get; private set; }
 
-        public List<Telefone> Telefones { get; set; }
 
         //Composição
         public Guid IdEmpresa  { get; private set; }
         public Empresa Empresa { get; private set; }
 
+        public IReadOnlyCollection<Telefone> Telefones { get; private set; }
 
     }
 }

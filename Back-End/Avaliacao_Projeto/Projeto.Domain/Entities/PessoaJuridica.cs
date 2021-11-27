@@ -10,14 +10,12 @@ namespace Projeto.Domain.Entities
 {
     public class PessoaJuridica : Funcionario
     {
-        public PessoaJuridica(string nome, Guid idEmpresa, string cNPJ)
-            :base(nome, idEmpresa)
+        public PessoaJuridica(string nome, Guid idEmpresa, DateTime dataCadastro, string cNPJ)
+            :base(nome, dataCadastro, idEmpresa)
         {
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
-                //.IsNotEmpty(nome, "Nome", "O Nome nao pode ser vazio")
-                //.IsNotNull(idEmpresa, "IdEmpresa", "O Id da empresa nao pode ser vazio")
                 .IsNotEmpty(cNPJ, "CNPJ", "O CNPJ nao pode ser vazio")
 
             );
@@ -25,11 +23,11 @@ namespace Projeto.Domain.Entities
             if (IsValid)
             {
                 CNPJ = cNPJ;
-
             }
 
         }
 
         public string CNPJ { get; private set; }
+
     }
 }

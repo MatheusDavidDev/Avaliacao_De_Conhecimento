@@ -1,0 +1,12 @@
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\bin\Debug\net5.0\Projeto.Shared.deps.json
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\bin\Debug\net5.0\Projeto.Shared.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\bin\Debug\net5.0\ref\Projeto.Shared.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\bin\Debug\net5.0\Projeto.Shared.pdb
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.csproj.AssemblyReference.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.AssemblyInfoInputs.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.AssemblyInfo.cs
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\ref\Projeto.Shared.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Shared\obj\Debug\net5.0\Projeto.Shared.pdb

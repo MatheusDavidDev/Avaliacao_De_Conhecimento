@@ -1,0 +1,15 @@
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\Projeto.Domain.deps.json
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\Projeto.Domain.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\ref\Projeto.Domain.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\Projeto.Domain.pdb
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\Projeto.Shared.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\bin\Debug\net5.0\Projeto.Shared.pdb
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.csproj.AssemblyReference.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.AssemblyInfoInputs.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.AssemblyInfo.cs
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.csproj.CopyComplete
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\ref\Projeto.Domain.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Domain\obj\Debug\net5.0\Projeto.Domain.pdb

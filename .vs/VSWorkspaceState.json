@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Back-End",
+    "\\Back-End\\Avaliacao_Projeto",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities\\Funcionario.cs",
   "PreviewInSolutionExplorer": false
 }
