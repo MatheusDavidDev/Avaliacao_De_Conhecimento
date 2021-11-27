@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Shared.Queries
 {
-    public class GenericQueryResult
+    public class GenericQueryResult : IQueryResult
     {
         public GenericQueryResult(bool sucesso, string mensagem, object data)
         {

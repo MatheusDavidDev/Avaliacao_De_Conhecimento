@@ -4,8 +4,10 @@
     "\\Back-End",
     "\\Back-End\\Avaliacao_Projeto",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain",
-    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities"
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers\\PessoaFisica"
   ],
-  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities\\Funcionario.cs",
+  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers\\PessoaFisica\\CadastrarPessoaFisicaHandler.cs",
   "PreviewInSolutionExplorer": false
 }
