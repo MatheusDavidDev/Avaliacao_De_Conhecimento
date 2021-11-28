@@ -8,7 +8,7 @@ using Projeto.Shared.Queries;
 
 namespace Projeto.Api.Controllers
 {
-    [Route("v1/funcionarioFisico")]
+    [Route("v1/Fisico")]
     [ApiController]
     public class PessoaFisicaController : ControllerBase
     {

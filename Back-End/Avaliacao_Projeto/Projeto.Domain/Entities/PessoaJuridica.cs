@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Domain.Entities
 {
-    public class PessoaJuridica : Funcionario
+    public class PessoaJuridica : Fornecedor
     {
         public PessoaJuridica(string nome, Guid idEmpresa, DateTime dataCadastro, string cNPJ)
             :base(nome, dataCadastro, idEmpresa)

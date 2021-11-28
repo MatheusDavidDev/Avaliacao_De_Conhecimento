@@ -13,9 +13,9 @@ namespace Projeto.Domain.Handlers.Funcionario
 {
     public class ListarFuncionarioHandler : IHandlerQuery<ListarFuncionarioQuery>
     {
-        private readonly IFuncionarioRepository _funcionarioRepositorio;
+        private readonly IFornecedorRepository _funcionarioRepositorio;
 
-        public ListarFuncionarioHandler(IFuncionarioRepository funcionarioRepositorio)
+        public ListarFuncionarioHandler(IFornecedorRepository funcionarioRepositorio)
         {
             _funcionarioRepositorio = funcionarioRepositorio;
 

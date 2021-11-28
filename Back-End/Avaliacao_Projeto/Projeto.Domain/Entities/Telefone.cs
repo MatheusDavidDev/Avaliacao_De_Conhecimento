@@ -34,6 +34,6 @@ namespace Projeto.Domain.Entities
 
         // Composição
         public Guid idFuncionario { get; private set; }
-        public Funcionario Funcionario { get; private set; }
+        public Fornecedor Funcionario { get; private set; }
     }
 }

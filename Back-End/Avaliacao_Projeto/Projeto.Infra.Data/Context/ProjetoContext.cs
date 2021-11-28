@@ -18,7 +18,7 @@ namespace Projeto.Infra.Data.Context
 
         //Tabelas
         public DbSet<Empresa> Empresas { get; set; }
-        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Fornecedor> Funcionarios { get; set; }
         public DbSet<PessoaFisica> Fisico { get; set; }
         public DbSet<PessoaJuridica> Juridico { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
@@ -44,16 +44,16 @@ namespace Projeto.Infra.Data.Context
 
             #region Mapeamento da tabela Funcionario
             //ID
-            modelBuilder.Entity<Funcionario>().Property(x => x.Id);
+            modelBuilder.Entity<Fornecedor>().Property(x => x.Id);
 
             // Foreign key Empresa
-            modelBuilder.Entity<Funcionario>().HasOne(p => p.Empresa).WithMany(x => x.Funcionarios).HasForeignKey(x => x.IdEmpresa);
+            modelBuilder.Entity<Fornecedor>().HasOne(p => p.Empresa).WithMany(x => x.Funcionarios).HasForeignKey(x => x.IdEmpresa);
 
             //NOME 
-            modelBuilder.Entity<Funcionario>().Property(x => x.Nome).HasColumnType("varchar(200)");
+            modelBuilder.Entity<Fornecedor>().Property(x => x.Nome).HasColumnType("varchar(200)");
 
             //Data de cadastro
-            modelBuilder.Entity<Funcionario>().Property(x => x.DataCadastro).HasColumnType("DateTime");
+            modelBuilder.Entity<Fornecedor>().Property(x => x.DataCadastro).HasColumnType("DateTime");
             #endregion
 
             #region Mapeamento da tabela Pessoa Fisica

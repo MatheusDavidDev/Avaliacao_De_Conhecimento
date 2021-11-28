@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Api.Controllers
 {
-    [Route("v1/funcionarioJuridico")]
+    [Route("v1/Juridico")]
     [ApiController]
     public class PessoaJuridicaController : ControllerBase
     {

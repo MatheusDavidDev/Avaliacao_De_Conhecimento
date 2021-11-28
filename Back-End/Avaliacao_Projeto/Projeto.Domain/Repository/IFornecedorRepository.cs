@@ -7,26 +7,26 @@ using System.Threading.Tasks;
 
 namespace Projeto.Domain.Repository
 {
-    public interface IFuncionarioRepository
+    public interface IFornecedorRepository
     {
         /// <summary>
         /// Lista de funcionarios
         /// </summary>
         /// <returns> Retorna uma lista de funcionarios cadastrados </returns>
-        ICollection<Funcionario> Listar();
+        ICollection<Fornecedor> Listar();
 
         /// <summary>
         /// Busca um funcionario pelo nome
         /// </summary>
         /// <param name="nome"> Nome do usuario buscado </param>
         /// <returns> Retorna os dados do usuario encontrado </returns>
-        Funcionario BuscarPorNome(string nome);
+        Fornecedor BuscarPorNome(string nome);
 
         /// <summary>
         /// Busca um funcionario pela data de cadastro
         /// </summary>
         /// <param name="data"> Data de </param>
         /// <returns></returns>
-        Funcionario BuscarPorDataCadastro(DateTime data);
+        Fornecedor BuscarPorDataCadastro(DateTime data);
     }
 }

@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace Projeto.Domain.Entities
 {
-    public class Funcionario : Base
+    public class Fornecedor : Base
     {
 
-        public Funcionario(string nome, DateTime dataCadastro, Guid idEmpresa)
+        public Fornecedor(string nome, DateTime dataCadastro, Guid idEmpresa)
         {
             AddNotifications(
             new Contract<Notification>()

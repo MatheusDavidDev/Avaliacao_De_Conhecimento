@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Projeto.Api.Controllers
 {
-    [Route("v1/funcionario")]
+    [Route("v1/Fornecedor")]
     [ApiController]
-    public class FuncionarioController : ControllerBase
+    public class FornecedorController : ControllerBase
     {
         [HttpGet]
         public GenericQueryResult GetAll([FromServices] ListarFuncionarioHandler handle)

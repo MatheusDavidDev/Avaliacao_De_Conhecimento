@@ -10,24 +10,24 @@ using System.Threading.Tasks;
 
 namespace Projeto.Infra.Data.Repository
 {
-    public class FuncionarioRepository : IFuncionarioRepository
+    public class FornecedorRepository : IFornecedorRepository
     {
         private readonly ProjetoContext _ctx;
-        public FuncionarioRepository(ProjetoContext context)
+        public FornecedorRepository(ProjetoContext context)
         {
             _ctx = context;
         }
-        public Funcionario BuscarPorDataCadastro(DateTime data)
+        public Fornecedor BuscarPorDataCadastro(DateTime data)
         {
            return _ctx.Funcionarios.FirstOrDefault(x => x.DataCadastro == data);
         }
 
-        public Funcionario BuscarPorNome(string nome)
+        public Fornecedor BuscarPorNome(string nome)
         {
             return _ctx.Funcionarios.FirstOrDefault(x => x.Nome.ToLower() == nome.ToLower());
         }
 
-        public ICollection<Funcionario> Listar()
+        public ICollection<Fornecedor> Listar()
         {
             return _ctx.Funcionarios
                 .Include(x => x.Empresa)
