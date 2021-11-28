@@ -1,19 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Projeto.Domain.Entities;
 using Projeto.Domain.Handlers.PessoaFisica;
 using Projeto.Domain.Queries.PessoaFisica;
 using Projeto.Shared.Commands;
 using Projeto.Shared.Queries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Projeto.Api.Controllers
 {
-    [Route("v1/FuncionarioFisico")]
+    [Route("v1/funcionarioFisico")]
     [ApiController]
     public class PessoaFisicaController : ControllerBase
     {
@@ -24,7 +19,6 @@ namespace Projeto.Api.Controllers
         }
 
         [HttpGet]
-
         public GenericQueryResult GetAll([FromServices] ListarPessoaFisicaHandler handle)
         {
             // Criamos uma interface nova da query

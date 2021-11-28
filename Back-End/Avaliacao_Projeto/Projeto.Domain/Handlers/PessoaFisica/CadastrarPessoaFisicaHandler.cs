@@ -30,7 +30,7 @@ namespace Projeto.Domain.Handlers.PessoaFisica
             {
                 return new GenericCommandResult(
                     false,
-                    "Informe corretamente os dados do funcionario",
+                    "Informe corretamente os dados do funcionario fisico",
                     command.Notifications
                 );
             }
@@ -39,7 +39,7 @@ namespace Projeto.Domain.Handlers.PessoaFisica
             // Verifica se o usuario existe
             var userExistente = _userFisicoRepositorio.BuscarCPF(command.CPF);
             if (userExistente != null)
-                return new GenericCommandResult(false, "Funcionario já cadastrado", null);
+                return new GenericCommandResult(false, "Funcionario já cadastrado no sistema", null);
 
 
 
@@ -59,7 +59,7 @@ namespace Projeto.Domain.Handlers.PessoaFisica
             _userFisicoRepositorio.Cadastrar(funcionario);
 
 
-            return new GenericCommandResult(true, "Funcionario cadastrado", "Objeto");
+            return new GenericCommandResult(true, "Funcionario cadastrado com sucesso!", "Objeto");
 
 
 

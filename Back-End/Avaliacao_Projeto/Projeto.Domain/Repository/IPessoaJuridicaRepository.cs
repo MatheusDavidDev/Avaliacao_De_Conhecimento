@@ -16,6 +16,13 @@ namespace Projeto.Domain.Repository
         void Cadastrar(PessoaJuridica novoFuncionario);
 
         /// <summary>
+        /// Busca um funcionario pessoa Juridica por CNPJ
+        /// </summary>
+        /// <param name="cnpj"> CNPJ buscado </param>
+        /// <returns> Dados do funcionario buscado</returns>
+        PessoaJuridica BuscarCNPJ(string cnpj);
+
+        /// <summary>
         /// Lista de funcionarios que são pessoas fisicas
         /// </summary>
         /// <returns> Retorna uma lista de funcionarios que são pessoas juridicas cadastrados </returns>

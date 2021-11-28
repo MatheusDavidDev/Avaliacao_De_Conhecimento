@@ -30,7 +30,6 @@ namespace Projeto.Infra.Data.Repository
         public ICollection<Funcionario> Listar()
         {
             return _ctx.Funcionarios
-                .AsNoTracking()
                 .Include(x => x.Empresa)
                 .Include(x => x.Telefones)
                 .OrderBy(x => x.DataCadastro)

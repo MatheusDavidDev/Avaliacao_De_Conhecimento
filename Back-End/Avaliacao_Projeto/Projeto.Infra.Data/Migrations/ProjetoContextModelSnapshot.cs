@@ -26,13 +26,13 @@ namespace Projeto.Infra.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CNPJ")
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeFantasia")
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UF")
-                        .HasColumnType("varchar(40)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -46,21 +46,24 @@ namespace Projeto.Infra.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("DateTime");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid?>("EmpresaId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("IdEmpresa")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("varchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdEmpresa");
+                    b.HasIndex("EmpresaId");
 
                     b.ToTable("Funcionarios");
 
@@ -74,14 +77,17 @@ namespace Projeto.Infra.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Contato")
-                        .HasColumnType("varchar(20)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("FuncionarioId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("idFuncionario")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("idFuncionario");
+                    b.HasIndex("FuncionarioId");
 
                     b.ToTable("Telefones");
                 });
@@ -91,21 +97,13 @@ namespace Projeto.Infra.Data.Migrations
                     b.HasBaseType("Projeto.Domain.Entities.Funcionario");
 
                     b.Property<string>("CPF")
-                        .HasColumnType("varchar(20)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DataNascimento")
-                        .HasColumnType("Date");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("RG")
-                        .HasColumnType("varchar(20)");
-
-                    b.HasIndex("CPF")
-                        .IsUnique()
-                        .HasFilter("[CPF] IS NOT NULL");
-
-                    b.HasIndex("RG")
-                        .IsUnique()
-                        .HasFilter("[RG] IS NOT NULL");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("PessoaFisica");
                 });
@@ -115,11 +113,7 @@ namespace Projeto.Infra.Data.Migrations
                     b.HasBaseType("Projeto.Domain.Entities.Funcionario");
 
                     b.Property<string>("CNPJ")
-                        .HasColumnType("varchar(20)");
-
-                    b.HasIndex("CNPJ")
-                        .IsUnique()
-                        .HasFilter("[CNPJ] IS NOT NULL");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("PessoaJuridica");
                 });
@@ -128,9 +122,7 @@ namespace Projeto.Infra.Data.Migrations
                 {
                     b.HasOne("Projeto.Domain.Entities.Empresa", "Empresa")
                         .WithMany("Funcionarios")
-                        .HasForeignKey("IdEmpresa")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EmpresaId");
 
                     b.Navigation("Empresa");
                 });
@@ -139,9 +131,7 @@ namespace Projeto.Infra.Data.Migrations
                 {
                     b.HasOne("Projeto.Domain.Entities.Funcionario", "Funcionario")
                         .WithMany("Telefones")
-                        .HasForeignKey("idFuncionario")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("FuncionarioId");
 
                     b.Navigation("Funcionario");
                 });

@@ -66,3 +66,6 @@ C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\A
 C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\obj\Debug\net5.0\ref\Projeto.Api.dll
 C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\obj\Debug\net5.0\Projeto.Api.pdb
 C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\obj\Debug\net5.0\Projeto.Api.genruntimeconfig.cache
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\mathe\Source\Repos\MatheusDavidDev\Avaliacao_De_Conhecimento\Back-End\Avaliacao_Projeto\Projeto.Api\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

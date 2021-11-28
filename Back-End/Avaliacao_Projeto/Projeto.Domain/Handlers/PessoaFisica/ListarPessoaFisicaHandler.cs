@@ -35,9 +35,9 @@ namespace Projeto.Domain.Handlers.PessoaFisica
                         DataNascimento = x.DataNascimento,
                         RG = x.RG,
                         CPF = x.CPF,
-                        Empresa = x.Empresa,
                         Telefones = x.Telefones,
-                        DataCadastro = x.DataCadastro
+                        DataCadastro = x.DataCadastro,
+                        Empresa = x.Empresa
                     };
                 }
 

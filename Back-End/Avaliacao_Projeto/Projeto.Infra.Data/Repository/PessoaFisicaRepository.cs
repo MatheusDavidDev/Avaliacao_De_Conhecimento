@@ -32,7 +32,6 @@ namespace Projeto.Infra.Data.Repository
         public ICollection<PessoaFisica> Listar()
         {
             return _ctx.Fisico
-                .AsNoTracking()
                 .Include(x => x.Empresa)
                 .Include(x => x.Telefones)
                 .OrderBy(x => x.DataCadastro)

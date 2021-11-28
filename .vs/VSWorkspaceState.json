@@ -4,10 +4,12 @@
     "\\Back-End",
     "\\Back-End\\Avaliacao_Projeto",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands\\Empresa",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Entities",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers\\PessoaFisica"
   ],
-  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers\\PessoaFisica\\CadastrarPessoaFisicaHandler.cs",
+  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands\\Empresa\\CadastrarEmpresaCommand.cs",
   "PreviewInSolutionExplorer": false
 }

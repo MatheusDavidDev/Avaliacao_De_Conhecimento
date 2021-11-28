@@ -31,7 +31,7 @@ namespace Projeto.Infra.Data.Repository
 
         public ICollection<Empresa> Listar()
         {
-            return _ctx.Empresas.AsNoTracking().ToList();
+            return _ctx.Empresas.ToList();
         }
     }
 }
