@@ -15,10 +15,10 @@ namespace Projeto.Api.Controllers
     public class FornecedorController : ControllerBase
     {
         [HttpGet]
-        public GenericQueryResult GetAll([FromServices] ListarFuncionarioHandler handle)
+        public GenericQueryResult GetAll([FromServices] ListarFornecedorHandler handle)
         {
             // Criamos uma interface nova da query
-            ListarFuncionarioQuery query = new ListarFuncionarioQuery();
+            ListarFornecedorQuery query = new ListarFornecedorQuery();
 
             // Fazemos o comparativo para mostar somente os ativos para o usuario comum
 

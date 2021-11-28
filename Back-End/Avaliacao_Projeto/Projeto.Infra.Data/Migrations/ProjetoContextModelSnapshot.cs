@@ -26,48 +26,45 @@ namespace Projeto.Infra.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CNPJ")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(200)");
 
                     b.Property<string>("NomeFantasia")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(200)");
 
                     b.Property<string>("UF")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(40)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Empresas");
                 });
 
-            modelBuilder.Entity("Projeto.Domain.Entities.Funcionario", b =>
+            modelBuilder.Entity("Projeto.Domain.Entities.Fornecedor", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("DataCadastro")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("DateTime");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("EmpresaId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("IdEmpresa")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nome")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(200)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmpresaId");
+                    b.HasIndex("IdEmpresa");
 
-                    b.ToTable("Funcionarios");
+                    b.ToTable("Fornecedores");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Funcionario");
+                    b.HasDiscriminator<string>("Discriminator").HasValue("Fornecedor");
                 });
 
             modelBuilder.Entity("Projeto.Domain.Entities.Telefone", b =>
@@ -77,71 +74,84 @@ namespace Projeto.Infra.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Contato")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
 
-                    b.Property<Guid?>("FuncionarioId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("idFuncionario")
+                    b.Property<Guid>("idFornecedor")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FuncionarioId");
+                    b.HasIndex("idFornecedor");
 
                     b.ToTable("Telefones");
                 });
 
             modelBuilder.Entity("Projeto.Domain.Entities.PessoaFisica", b =>
                 {
-                    b.HasBaseType("Projeto.Domain.Entities.Funcionario");
+                    b.HasBaseType("Projeto.Domain.Entities.Fornecedor");
 
                     b.Property<string>("CPF")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
 
                     b.Property<DateTime>("DataNascimento")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("Date");
 
                     b.Property<string>("RG")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
+
+                    b.HasIndex("CPF")
+                        .IsUnique()
+                        .HasFilter("[CPF] IS NOT NULL");
+
+                    b.HasIndex("RG")
+                        .IsUnique()
+                        .HasFilter("[RG] IS NOT NULL");
 
                     b.HasDiscriminator().HasValue("PessoaFisica");
                 });
 
             modelBuilder.Entity("Projeto.Domain.Entities.PessoaJuridica", b =>
                 {
-                    b.HasBaseType("Projeto.Domain.Entities.Funcionario");
+                    b.HasBaseType("Projeto.Domain.Entities.Fornecedor");
 
                     b.Property<string>("CNPJ")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(20)");
+
+                    b.HasIndex("CNPJ")
+                        .IsUnique()
+                        .HasFilter("[CNPJ] IS NOT NULL");
 
                     b.HasDiscriminator().HasValue("PessoaJuridica");
                 });
 
-            modelBuilder.Entity("Projeto.Domain.Entities.Funcionario", b =>
+            modelBuilder.Entity("Projeto.Domain.Entities.Fornecedor", b =>
                 {
                     b.HasOne("Projeto.Domain.Entities.Empresa", "Empresa")
-                        .WithMany("Funcionarios")
-                        .HasForeignKey("EmpresaId");
+                        .WithMany("Fornecedores")
+                        .HasForeignKey("IdEmpresa")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Empresa");
                 });
 
             modelBuilder.Entity("Projeto.Domain.Entities.Telefone", b =>
                 {
-                    b.HasOne("Projeto.Domain.Entities.Funcionario", "Funcionario")
+                    b.HasOne("Projeto.Domain.Entities.Fornecedor", "Fornecedor")
                         .WithMany("Telefones")
-                        .HasForeignKey("FuncionarioId");
+                        .HasForeignKey("idFornecedor")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Funcionario");
+                    b.Navigation("Fornecedor");
                 });
 
             modelBuilder.Entity("Projeto.Domain.Entities.Empresa", b =>
                 {
-                    b.Navigation("Funcionarios");
+                    b.Navigation("Fornecedores");
                 });
 
-            modelBuilder.Entity("Projeto.Domain.Entities.Funcionario", b =>
+            modelBuilder.Entity("Projeto.Domain.Entities.Fornecedor", b =>
                 {
                     b.Navigation("Telefones");
                 });

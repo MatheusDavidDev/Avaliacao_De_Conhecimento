@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.Domain.Queries.Funcionario
 {
-    public class ListarFuncionarioQuery : IQuery
+    public class ListarFornecedorQuery : IQuery
     {
         public void validar()
         {
@@ -19,13 +19,9 @@ namespace Projeto.Domain.Queries.Funcionario
         {
             public Guid Id { get; set; }
             public string Nome { get; set; }
+            public string Empresa { get; set; }
             public DateTime DataCadastro { get; set; }
-            public Entities.Empresa Empresa { get; set; }
-            public IReadOnlyCollection<Telefone> Telefones { get; private set; }
-
-            //public string RG { get; set; }
-            //public string CPF { get; set; }
-            //public DateTime DataNascimento { get; set; }
+            public IEnumerable<Object> Telefones { get; set; }
 
         }
     }

@@ -40,12 +40,12 @@ namespace Projeto.Domain.Handlers.Empresa
 
             Entities.Empresa empresa = new Entities.Empresa
                 (
-                   command.UF,
+                   command.UF.ToUpper(),
                    command.NomeFantasia,
                    command.CNPJ
                 );
             if (!empresa.IsValid)
-               return new GenericCommandResult(false, "Dados da empresa invalidos", empresa.Notifications);
+               return new GenericCommandResult(false, "Dados da empresa inválidos", empresa.Notifications);
 
             _empresaRepositorio.Cadastrar(empresa);
 

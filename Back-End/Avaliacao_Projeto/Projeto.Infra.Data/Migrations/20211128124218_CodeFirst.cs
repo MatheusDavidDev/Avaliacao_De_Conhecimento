@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Projeto.Infra.Data.Migrations
 {
-    public partial class First : Migration
+    public partial class CodeFirst : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -22,7 +22,7 @@ namespace Projeto.Infra.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Funcionarios",
+                name: "Fornecedores",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -37,9 +37,9 @@ namespace Projeto.Infra.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Funcionarios", x => x.Id);
+                    table.PrimaryKey("PK_Fornecedores", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Funcionarios_Empresas_IdEmpresa",
+                        name: "FK_Fornecedores_Empresas_IdEmpresa",
                         column: x => x.IdEmpresa,
                         principalTable: "Empresas",
                         principalColumn: "Id",
@@ -52,49 +52,49 @@ namespace Projeto.Infra.Data.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Contato = table.Column<string>(type: "varchar(20)", nullable: true),
-                    idFuncionario = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    idFornecedor = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Telefones", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Telefones_Funcionarios_idFuncionario",
-                        column: x => x.idFuncionario,
-                        principalTable: "Funcionarios",
+                        name: "FK_Telefones_Fornecedores_idFornecedor",
+                        column: x => x.idFornecedor,
+                        principalTable: "Fornecedores",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Funcionarios_CNPJ",
-                table: "Funcionarios",
+                name: "IX_Fornecedores_CNPJ",
+                table: "Fornecedores",
                 column: "CNPJ",
                 unique: true,
                 filter: "[CNPJ] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Funcionarios_CPF",
-                table: "Funcionarios",
+                name: "IX_Fornecedores_CPF",
+                table: "Fornecedores",
                 column: "CPF",
                 unique: true,
                 filter: "[CPF] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Funcionarios_IdEmpresa",
-                table: "Funcionarios",
+                name: "IX_Fornecedores_IdEmpresa",
+                table: "Fornecedores",
                 column: "IdEmpresa");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Funcionarios_RG",
-                table: "Funcionarios",
+                name: "IX_Fornecedores_RG",
+                table: "Fornecedores",
                 column: "RG",
                 unique: true,
                 filter: "[RG] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Telefones_idFuncionario",
+                name: "IX_Telefones_idFornecedor",
                 table: "Telefones",
-                column: "idFuncionario");
+                column: "idFornecedor");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -103,7 +103,7 @@ namespace Projeto.Infra.Data.Migrations
                 name: "Telefones");
 
             migrationBuilder.DropTable(
-                name: "Funcionarios");
+                name: "Fornecedores");
 
             migrationBuilder.DropTable(
                 name: "Empresas");

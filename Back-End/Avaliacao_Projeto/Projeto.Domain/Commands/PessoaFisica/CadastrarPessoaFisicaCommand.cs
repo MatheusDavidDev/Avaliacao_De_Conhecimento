@@ -20,7 +20,6 @@ namespace Projeto.Domain.Entities
         {
             Nome = nome;
             IdEmpresa = idEmpresa;
-            DataCadastro = DateTime.Now;
             RG = rG;
             CPF = cPF;
             DataNascimento = dataNascimento;
@@ -28,7 +27,6 @@ namespace Projeto.Domain.Entities
 
         public string Nome { get; set; }
         public Guid IdEmpresa { get; set; }
-        public DateTime DataCadastro { get; set; }
         public string RG { get; set; }
         public string CPF { get; set; }
         public DateTime DataNascimento { get; set; }

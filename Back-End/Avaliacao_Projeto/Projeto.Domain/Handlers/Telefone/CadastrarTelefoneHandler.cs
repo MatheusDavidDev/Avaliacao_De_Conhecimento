@@ -32,7 +32,7 @@ namespace Projeto.Domain.Handlers
             Entities.Telefone telefone = new Entities.Telefone
                 (
                     command.Contato,
-                    command.idFuncionario
+                    command.idFornecedor
                 );
 
             if (!telefone.IsValid)

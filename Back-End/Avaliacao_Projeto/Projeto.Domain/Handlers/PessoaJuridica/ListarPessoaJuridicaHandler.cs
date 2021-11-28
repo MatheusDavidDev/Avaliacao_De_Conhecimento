@@ -33,15 +33,15 @@ namespace Projeto.Domain.Handlers.PessoaJuridica
                         Id = x.Id,
                         Nome = x.Nome,
                         CNPJ = x.CNPJ,
-                        Telefones = x.Telefones,
-                        DataCadastro = x.DataCadastro,
                         Empresa = x.Empresa.NomeFantasia,
+                        DataCadastro = x.DataCadastro,
+                        Telefones = x.Telefones.Select(x => x.Contato)
                     };
                 }
 
             );
 
-            return new GenericQueryResult(true, "Funcionarios pessoas juridicas  encontrados", retornoPessoasJuridicas);
+            return new GenericQueryResult(true, "Fornecedores jurídicos encontrados", retornoPessoasJuridicas);
         }
     }
 }

@@ -35,15 +35,17 @@ namespace Projeto.Domain.Handlers.PessoaFisica
                         DataNascimento = x.DataNascimento,
                         RG = x.RG,
                         CPF = x.CPF,
-                        Telefones = x.Telefones,
+                        Empresa = x.Empresa.NomeFantasia,
                         DataCadastro = x.DataCadastro,
-                        Empresa = x.Empresa
+                        Telefones = x.Telefones
+                        .Select(x => x.Contato)
+
                     };
                 }
 
             );
 
-            return new GenericQueryResult(true , "Funcionarios pessoas fisicas encontrados", retornoPessoasFisicas);
+            return new GenericQueryResult(true , "Fornecedor físicos encontrados", retornoPessoasFisicas);
         }
     }
 }

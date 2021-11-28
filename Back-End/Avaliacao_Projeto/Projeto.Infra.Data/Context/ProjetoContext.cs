@@ -18,7 +18,7 @@ namespace Projeto.Infra.Data.Context
 
         //Tabelas
         public DbSet<Empresa> Empresas { get; set; }
-        public DbSet<Fornecedor> Funcionarios { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
         public DbSet<PessoaFisica> Fisico { get; set; }
         public DbSet<PessoaJuridica> Juridico { get; set; }
         public DbSet<Telefone> Telefones { get; set; }
@@ -42,12 +42,12 @@ namespace Projeto.Infra.Data.Context
 
             #endregion
 
-            #region Mapeamento da tabela Funcionario
+            #region Mapeamento da tabela Fornecedores
             //ID
             modelBuilder.Entity<Fornecedor>().Property(x => x.Id);
 
             // Foreign key Empresa
-            modelBuilder.Entity<Fornecedor>().HasOne(p => p.Empresa).WithMany(x => x.Funcionarios).HasForeignKey(x => x.IdEmpresa);
+            modelBuilder.Entity<Fornecedor>().HasOne(p => p.Empresa).WithMany(x => x.Fornecedores).HasForeignKey(x => x.IdEmpresa);
 
             //NOME 
             modelBuilder.Entity<Fornecedor>().Property(x => x.Nome).HasColumnType("varchar(200)");
@@ -58,7 +58,7 @@ namespace Projeto.Infra.Data.Context
 
             #region Mapeamento da tabela Pessoa Fisica
             //ID
-            modelBuilder.Entity<PessoaFisica>().Property(x => x.Id);
+            //modelBuilder.Entity<PessoaFisica>().Property(x => x.Id);
 
             //CPF
             modelBuilder.Entity<PessoaFisica>().Property(x => x.CPF).HasColumnType("varchar(20)");
@@ -76,7 +76,7 @@ namespace Projeto.Infra.Data.Context
             #region Mapeamento da tapela Pessoa Juridica
 
             //ID
-            modelBuilder.Entity<PessoaJuridica>().Property(x => x.Id);
+            //modelBuilder.Entity<PessoaJuridica>().Property(x => x.Id);
 
             //CNPJ
             modelBuilder.Entity<PessoaJuridica>().Property(x => x.CNPJ).HasColumnType("varchar(20)");
@@ -86,7 +86,7 @@ namespace Projeto.Infra.Data.Context
 
             #region Mapeamento da tabela Telefones
             //ID
-            modelBuilder.Entity<Telefone>().HasOne(p => p.Funcionario).WithMany(x => x.Telefones).HasForeignKey(x => x.idFuncionario);
+            modelBuilder.Entity<Telefone>().HasOne(p => p.Fornecedor).WithMany(x => x.Telefones).HasForeignKey(x => x.idFornecedor);
 
             // Telefone
             modelBuilder.Entity<Telefone>().Property(x => x.Contato).HasColumnType("varchar(20)");

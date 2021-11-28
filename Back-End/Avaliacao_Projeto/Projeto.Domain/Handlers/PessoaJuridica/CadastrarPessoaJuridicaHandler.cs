@@ -30,7 +30,7 @@ namespace Projeto.Domain.Handlers.PessoaJuridica
             {
                 return new GenericCommandResult(
                     false,
-                    "Informe corretamente os dados do funcionario juridico",
+                    "Informe corretamente os dados do fornecedor jurídico",
                     command.Notifications
                 );
             }
@@ -38,22 +38,22 @@ namespace Projeto.Domain.Handlers.PessoaJuridica
             // Verifica se o usuario existe
             var userExistente = _userJuridicoRepositorio.BuscarCNPJ(command.CNPJ);
             if (userExistente != null)
-                return new GenericCommandResult(false, "Funcionario já cadastrado no sistema", null);
+                return new GenericCommandResult(false, "Fornecedor jurídico já cadastrado no sistema", null);
 
             Entities.PessoaJuridica funcionario = new Entities.PessoaJuridica
                 (
                     command.Nome,
                     command.IdEmpresa,
-                    command.DataCadastro = DateTime.Now,
+                    DateTime.Now,
                     command.CNPJ
                 );
             if (!funcionario.IsValid)
-                return new GenericCommandResult(false, "Dados de funcionario invalidos", funcionario.Notifications);
+                return new GenericCommandResult(false, "Dados do fornecedor inválidos", funcionario.Notifications);
 
             _userJuridicoRepositorio.Cadastrar(funcionario);
 
 
-            return new GenericCommandResult(true, "Funcionario cadastrado com sucesso!", "Objeto");
+            return new GenericCommandResult(true, "Fornecedor jurídico cadastrado com sucesso!", "Objeto");
         }
     }
 }

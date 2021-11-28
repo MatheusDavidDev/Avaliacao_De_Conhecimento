@@ -19,21 +19,23 @@ namespace Projeto.Infra.Data.Repository
         }
         public Fornecedor BuscarPorDataCadastro(DateTime data)
         {
-           return _ctx.Funcionarios.FirstOrDefault(x => x.DataCadastro == data);
+           return _ctx.Fornecedores.FirstOrDefault(x => x.DataCadastro == data);
         }
 
         public Fornecedor BuscarPorNome(string nome)
         {
-            return _ctx.Funcionarios.FirstOrDefault(x => x.Nome.ToLower() == nome.ToLower());
+            return _ctx.Fornecedores.FirstOrDefault(x => x.Nome.ToLower() == nome.ToLower());
         }
 
         public ICollection<Fornecedor> Listar()
         {
-            return _ctx.Funcionarios
+            return _ctx.Fornecedores
                 .Include(x => x.Empresa)
                 .Include(x => x.Telefones)
                 .OrderBy(x => x.DataCadastro)
                 .ToList();
+
+
         }
     }
 }

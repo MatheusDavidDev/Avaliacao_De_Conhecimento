@@ -15,14 +15,14 @@ namespace Projeto.Domain.Commands
         {
 
         }
-        public CadastrarTelefoneCommand(string contato, Guid idFuncionario)
+        public CadastrarTelefoneCommand(string contato, Guid idFornecedor)
         {
             Contato = contato;
-            this.idFuncionario = idFuncionario;
+            this.idFornecedor = idFornecedor;
         }
 
         public string Contato { get; set; }
-        public Guid idFuncionario { get; set; }
+        public Guid idFornecedor { get; set; }
 
         public void Validar()
         {
@@ -30,7 +30,7 @@ namespace Projeto.Domain.Commands
             new Contract<Notification>()
                 .Requires()
                 .IsNotEmpty(Contato, "Contato", "O Contato não pode ser vazio")
-                .IsNotEmpty(idFuncionario, "IdFuncionario", "O Id Funcionario não pode ser vazio")
+                .IsNotEmpty(idFornecedor, "IdFuncionario", "O Id Funcionario não pode ser vazio")
             );
         }
     }

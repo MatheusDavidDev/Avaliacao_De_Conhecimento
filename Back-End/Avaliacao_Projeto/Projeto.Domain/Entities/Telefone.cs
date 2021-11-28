@@ -11,20 +11,20 @@ namespace Projeto.Domain.Entities
 {
     public class Telefone : Base
     {
-        public Telefone(string contato, Guid idFuncionario)
+        public Telefone(string contato, Guid idFornecedor)
         {
             AddNotifications(
             new Contract<Notification>()
                 .Requires()
                 .IsNotEmpty(contato, "Contato", "O Contato não pode ser vazio")
-                .IsNotEmpty(idFuncionario, "IdFuncionario", "O Id Funcionario não pode ser vazio")
+                .IsNotEmpty(idFornecedor, "IdFuncionario", "O Id Funcionario não pode ser vazio")
 
             );
 
             if (IsValid)
             {
                 Contato = contato;
-                this.idFuncionario = idFuncionario;
+                this.idFornecedor = idFornecedor;
             }
 
             
@@ -33,7 +33,7 @@ namespace Projeto.Domain.Entities
         public string Contato { get; private set; }
 
         // Composição
-        public Guid idFuncionario { get; private set; }
-        public Fornecedor Funcionario { get; private set; }
+        public Guid idFornecedor { get; private set; }
+        public Fornecedor Fornecedor { get; private set; }
     }
 }

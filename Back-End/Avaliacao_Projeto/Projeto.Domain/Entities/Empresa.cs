@@ -37,7 +37,7 @@ namespace Projeto.Domain.Entities
         public string NomeFantasia { get; private set; }
         public string CNPJ { get; private set; }
 
-        public IReadOnlyCollection<Fornecedor> Funcionarios { get; private set; }
+        public IReadOnlyCollection<Fornecedor> Fornecedores { get; private set; }
 
     }
 }

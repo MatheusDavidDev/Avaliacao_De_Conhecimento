@@ -22,9 +22,10 @@ namespace Projeto.Domain.Queries.PessoaFisica
             public string RG { get; set; }
             public string CPF { get; set; }
             public DateTime DataNascimento { get; set; }
-            public Entities.Empresa Empresa { get; set; }
-            public IReadOnlyCollection<Telefone> Telefones { get; set; }
+            public string Empresa { get; set; }
             public DateTime DataCadastro { get; set; }
+            public IEnumerable<string> Telefones { get; set; }
+
         }
     }
 }

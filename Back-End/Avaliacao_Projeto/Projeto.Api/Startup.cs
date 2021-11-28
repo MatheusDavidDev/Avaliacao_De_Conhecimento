@@ -74,7 +74,7 @@ namespace Projeto.Api
 
             #region Injecoes de dependencias do Fornecedor
             services.AddTransient<IFornecedorRepository, FornecedorRepository>();
-            services.AddTransient<ListarFuncionarioHandler, ListarFuncionarioHandler>();
+            services.AddTransient<ListarFornecedorHandler, ListarFornecedorHandler>();
             #endregion
 
             #region Injecoes de dependencias Pessoa fisica

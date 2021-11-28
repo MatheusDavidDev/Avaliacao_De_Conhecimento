@@ -42,6 +42,5 @@ namespace Projeto.Domain.Entities
 
         public IReadOnlyCollection<Telefone> Telefones { get; private set; }
 
-
     }
 }

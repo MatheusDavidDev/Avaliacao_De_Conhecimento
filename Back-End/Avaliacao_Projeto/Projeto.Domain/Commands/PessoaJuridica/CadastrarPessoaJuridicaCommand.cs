@@ -26,7 +26,6 @@ namespace Projeto.Domain.Commands.PessoaJuridica
         public string Nome { get; set; }
         public string CNPJ { get; set; }
         public Guid IdEmpresa { get; set; }
-        public DateTime DataCadastro { get; set; }
 
         public void Validar()
         {
