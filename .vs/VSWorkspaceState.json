@@ -3,6 +3,8 @@
     "",
     "\\Back-End",
     "\\Back-End\\Avaliacao_Projeto",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Api",
+    "\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Controllers",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands\\Empresa",
@@ -10,6 +12,6 @@
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers",
     "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Handlers\\PessoaFisica"
   ],
-  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Domain\\Commands\\Empresa\\CadastrarEmpresaCommand.cs",
+  "SelectedNode": "\\Back-End\\Avaliacao_Projeto\\Projeto.Api\\Controllers\\PessoaJuridicaController.cs",
   "PreviewInSolutionExplorer": false
 }
