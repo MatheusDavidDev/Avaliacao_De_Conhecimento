@@ -1,12 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Projeto.Domain.Handlers.Funcionario;
 using Projeto.Domain.Queries.Funcionario;
 using Projeto.Shared.Queries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Projeto.Api.Controllers
 {

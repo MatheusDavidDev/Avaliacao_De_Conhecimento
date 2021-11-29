@@ -2,9 +2,6 @@
 using Projeto.Shared.Queries;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projeto.Domain.Queries.Funcionario
 {
@@ -21,7 +18,7 @@ namespace Projeto.Domain.Queries.Funcionario
             public string Nome { get; set; }
             public string Empresa { get; set; }
             public DateTime DataCadastro { get; set; }
-            public IEnumerable<Object> Telefones { get; set; }
+            public IEnumerable<string> Telefones { get; set; }
 
         }
     }

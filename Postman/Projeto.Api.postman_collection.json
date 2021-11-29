@@ -1,0 +1,523 @@
+{
+	"info": {
+		"_postman_id": "00ec5046-1880-4df8-a4b2-9f192f891905",
+		"name": "Projeto.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1",
+			"item": [
+				{
+					"name": "empresa",
+					"item": [
+						{
+							"name": "/v1/empresa",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"uf\": \"SP\",\n    \"nomeFantasia\": \"Ponto Frio\",\n    \"cnpj\": \"12345678954121\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/empresa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"empresa"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"uf\": \"sit in velit\",\n    \"nomeFantasia\": \"ex reprehenderit\",\n    \"cnpj\": \"fugiat ex Lorem amet\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/empresa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"empresa"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "/v1/empresa",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/empresa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"empresa"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/empresa",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"empresa"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Fisico",
+					"item": [
+						{
+							"name": "/v1/Fisico",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Marcelo Silva\",\n    \"idEmpresa\": \"be8601cc-4eb9-4515-935b-c10bdfb5c3a6\",\n    \"rg\": \"125423548\",\n    \"cpf\": \"1475247857\",\n    \"dataNascimento\": \"2000-02-26\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/Fisico",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"Fisico"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"in\",\n    \"idEmpresa\": \"b90af78a-ef14-468d-c29c-5279147f5fe1\",\n    \"rg\": \"exercitation incididunt\",\n    \"cpf\": \"commodo in\",\n    \"dataNascimento\": \"1961-02-26T19:04:55.413Z\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/Fisico",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"Fisico"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "/v1/Fisico",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/Fisico",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"Fisico"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/Fisico",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"Fisico"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Juridico",
+					"item": [
+						{
+							"name": "/v1/Juridico",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"nome\": \"Rafael Santos\",\n    \"cnpj\": \"12311556165154\",\n    \"idEmpresa\": \"be8601cc-4eb9-4515-935b-c10bdfb5c3a6\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/Juridico",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"Juridico"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"nome\": \"non dolore officia\",\n    \"cnpj\": \"magna laboris\",\n    \"idEmpresa\": \"urn:uuid:c4182127-3094-4d44-1471-f74a137416ac\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v1/Juridico",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"Juridico"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						},
+						{
+							"name": "/v1/Juridico",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/Juridico",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"Juridico"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v1/Juridico",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v1",
+												"Juridico"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/v1/Fornecedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v1/Fornecedor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"Fornecedor"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/Fornecedor",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"Fornecedor"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "/v1/telefone",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contato\": \"1245124518\",\n    \"idFornecedor\": \"a076888f-e9cf-4339-8592-ada20bfe5b60\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/v1/telefone",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"telefone"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"contato\": \"consequat cupidatat nisi magna occaecat\",\n    \"idFornecedor\": \"urn:uuid:7d7e676d-339e-4582-428e-517b20a42f39\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v1/telefone",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"telefone"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"sucesso\": true,\n \"mensagem\": \"ut in laborum officia reprehenderit\",\n \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:5001"
+		}
+	]
+}

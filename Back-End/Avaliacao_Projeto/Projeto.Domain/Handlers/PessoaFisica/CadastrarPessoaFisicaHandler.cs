@@ -4,10 +4,6 @@ using Projeto.Domain.Repository;
 using Projeto.Shared.Commands;
 using Projeto.Shared.Handler.Contracts;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projeto.Domain.Handlers.PessoaFisica
 {

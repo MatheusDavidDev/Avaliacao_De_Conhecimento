@@ -2,11 +2,7 @@
 using Projeto.Domain.Repository;
 using Projeto.Shared.Handler.Contracts;
 using Projeto.Shared.Queries;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static Projeto.Domain.Queries.PessoaFisica.ListarPessoaFisicaQuery;
 
 namespace Projeto.Domain.Handlers.PessoaFisica

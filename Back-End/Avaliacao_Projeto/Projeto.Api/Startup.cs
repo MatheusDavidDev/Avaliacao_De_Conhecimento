@@ -1,12 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Projeto.Domain.Handlers;
 using Projeto.Domain.Handlers.Empresa;
@@ -16,11 +13,6 @@ using Projeto.Domain.Handlers.PessoaJuridica;
 using Projeto.Domain.Repository;
 using Projeto.Infra.Data.Context;
 using Projeto.Infra.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace Projeto.Api
 {
